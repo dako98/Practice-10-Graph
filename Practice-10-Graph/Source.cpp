@@ -27,7 +27,7 @@ void AddEdge(const size_t first, const size_t second, Matrix &matrix)
 
 void PrintMatrix(const Matrix &matrix)
 {
-	for (auto& row : matrix)
+	for (const std::vector<int> &row : matrix)
 	{
 		for (int edge : row)
 			std::cout << edge << ' ';
@@ -82,6 +82,18 @@ void PrintList(const NeighbourList &list)
 		std::cout << " }\n";
 	}
 }
+
+
+//--------------Task 3 \/ ---------------
+
+struct Graph
+{
+
+};
+
+
+
+
 
 int main()
 {
